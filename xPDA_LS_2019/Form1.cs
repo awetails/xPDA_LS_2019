@@ -16,5 +16,10 @@ namespace xPDA_LS_2019
         {
             InitializeComponent();
         }
+
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

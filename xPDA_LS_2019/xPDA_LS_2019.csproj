@@ -66,6 +66,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="poniesNames.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>poniesNames.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Pridavaci_formular_obrazku.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +103,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="poniesNames.xsc">
+      <DependentUpon>poniesNames.xsd</DependentUpon>
+    </None>
+    <None Include="poniesNames.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>poniesNames.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="poniesNames.xss">
+      <DependentUpon>poniesNames.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
