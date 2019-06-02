@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pridavaci_formular_obrazku));
             this.SuspendLayout();
             // 
-            // Pridavaci_formular
+            // Pridavaci_formular_obrazku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 539);
-            this.Name = "Pridavaci_formular";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Pridavaci_formular_obrazku";
             this.Text = "Pridavaci_formular";
             this.Load += new System.EventHandler(this.Pridavaci_formular_Load);
             this.ResumeLayout(false);
