@@ -120,6 +120,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Potvrď";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
@@ -147,6 +148,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pridavaci_formular_pony";
             this.Text = "Pridavaci_formular_pony";
+            this.Load += new System.EventHandler(this.Pridavaci_formular_pony_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
