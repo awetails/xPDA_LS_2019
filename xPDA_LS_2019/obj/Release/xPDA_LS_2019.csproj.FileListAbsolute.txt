@@ -1,0 +1,14 @@
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\bin\Release\ponies.mdf
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\bin\Release\ponies_log.ldf
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\bin\Release\xPDA_LS_2019.exe.config
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\bin\Release\xPDA_LS_2019.exe
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\bin\Release\xPDA_LS_2019.pdb
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\obj\Release\xPDA_LS_2019.csprojAssemblyReference.cache
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\obj\Release\xPDA_LS_2019.Form1.resources
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\obj\Release\xPDA_LS_2019.Pridavaci_formular_obrazku.resources
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\obj\Release\xPDA_LS_2019.Pridavaci_formular_pony.resources
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\obj\Release\xPDA_LS_2019.Properties.Resources.resources
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\obj\Release\xPDA_LS_2019.csproj.GenerateResource.cache
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\obj\Release\xPDA_LS_2019.csproj.CoreCompileInputs.cache
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\obj\Release\xPDA_LS_2019.exe
+C:\Users\danhu\Desktop\PDA\xPDA_LS_2019\xPDA_LS_2019\obj\Release\xPDA_LS_2019.pdb

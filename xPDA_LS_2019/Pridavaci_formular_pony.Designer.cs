@@ -30,93 +30,104 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pridavaci_formular_pony));
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.rb_earth = new System.Windows.Forms.RadioButton();
+            this.rb_uni = new System.Windows.Forms.RadioButton();
+            this.rb_pega = new System.Windows.Forms.RadioButton();
+            this.rb_M = new System.Windows.Forms.RadioButton();
+            this.rb_F = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(175, 55);
+            this.textBox1.Location = new System.Drawing.Point(89, 24);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(332, 22);
+            this.textBox1.Size = new System.Drawing.Size(289, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // radioButton1
+            // rb_earth
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(397, 30);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(98, 21);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Earth pony";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_earth.AutoSize = true;
+            this.rb_earth.Location = new System.Drawing.Point(144, 31);
+            this.rb_earth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_earth.Name = "rb_earth";
+            this.rb_earth.Size = new System.Drawing.Size(76, 17);
+            this.rb_earth.TabIndex = 1;
+            this.rb_earth.TabStop = true;
+            this.rb_earth.Text = "Earth pony";
+            this.rb_earth.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rb_uni
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(217, 30);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(78, 21);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Unicorn";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_uni.AutoSize = true;
+            this.rb_uni.Location = new System.Drawing.Point(78, 31);
+            this.rb_uni.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_uni.Name = "rb_uni";
+            this.rb_uni.Size = new System.Drawing.Size(62, 17);
+            this.rb_uni.TabIndex = 2;
+            this.rb_uni.TabStop = true;
+            this.rb_uni.Text = "Unicorn";
+            this.rb_uni.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rb_pega
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(39, 30);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(88, 21);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Pegasus ";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rb_pega.AutoSize = true;
+            this.rb_pega.Location = new System.Drawing.Point(5, 31);
+            this.rb_pega.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_pega.Name = "rb_pega";
+            this.rb_pega.Size = new System.Drawing.Size(69, 17);
+            this.rb_pega.TabIndex = 3;
+            this.rb_pega.TabStop = true;
+            this.rb_pega.Text = "Pegasus ";
+            this.rb_pega.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rb_M
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(39, 120);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(59, 21);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Male";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rb_M.AutoSize = true;
+            this.rb_M.Location = new System.Drawing.Point(5, 31);
+            this.rb_M.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_M.Name = "rb_M";
+            this.rb_M.Size = new System.Drawing.Size(48, 17);
+            this.rb_M.TabIndex = 4;
+            this.rb_M.TabStop = true;
+            this.rb_M.Text = "Male";
+            this.rb_M.UseVisualStyleBackColor = true;
+            this.rb_M.CheckedChanged += new System.EventHandler(this.Rb_M_CheckedChanged);
             // 
-            // radioButton5
+            // rb_F
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(217, 120);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(75, 21);
-            this.radioButton5.TabIndex = 5;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Female";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rb_F.AutoSize = true;
+            this.rb_F.Location = new System.Drawing.Point(57, 31);
+            this.rb_F.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_F.Name = "rb_F";
+            this.rb_F.Size = new System.Drawing.Size(59, 17);
+            this.rb_F.TabIndex = 5;
+            this.rb_F.TabStop = true;
+            this.rb_F.Text = "Female";
+            this.rb_F.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 55);
+            this.label1.Location = new System.Drawing.Point(25, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 17);
+            this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Zadej jméno pony";
+            this.label1.Text = "Pony name";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(378, 301);
+            this.button1.Location = new System.Drawing.Point(267, 239);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 31);
+            this.button1.Size = new System.Drawing.Size(114, 25);
             this.button1.TabIndex = 7;
             this.button1.Text = "Potvrď";
             this.button1.UseVisualStyleBackColor = true;
@@ -124,33 +135,49 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Location = new System.Drawing.Point(12, 104);
+            this.groupBox1.Controls.Add(this.rb_F);
+            this.groupBox1.Controls.Add(this.rb_M);
+            this.groupBox1.Location = new System.Drawing.Point(11, 160);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(518, 155);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(370, 75);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Zatrhni příslušnou rasu a pohlaví";
+            this.groupBox1.Text = "Choose Gender";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rb_pega);
+            this.groupBox2.Controls.Add(this.rb_uni);
+            this.groupBox2.Controls.Add(this.rb_earth);
+            this.groupBox2.Location = new System.Drawing.Point(11, 81);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(370, 74);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Choose Race";
+            this.groupBox2.Enter += new System.EventHandler(this.GroupBox2_Enter);
             // 
             // Pridavaci_formular_pony
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 370);
+            this.ClientSize = new System.Drawing.Size(389, 272);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Pridavaci_formular_pony";
             this.Text = "Pridavaci_formular_pony";
             this.Load += new System.EventHandler(this.Pridavaci_formular_pony_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,13 +186,14 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton rb_earth;
+        private System.Windows.Forms.RadioButton rb_uni;
+        private System.Windows.Forms.RadioButton rb_pega;
+        private System.Windows.Forms.RadioButton rb_M;
+        private System.Windows.Forms.RadioButton rb_F;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

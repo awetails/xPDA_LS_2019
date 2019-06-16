@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,54 +28,61 @@ namespace xPDA_LS_2019
         {
             string jmeno = textBox1.Text;
 
-            string rasa;
+            string rasa = "";
 
-                 if (radioButton4.Checked == true)
+            if (rb_earth.Checked == true)
             {
-                rasa = "Male";
+                rasa = "Earth Pony";
             }
-            else if (radioButton2.Checked == true)
+            if (rb_uni.Checked == true)
             {
                 rasa = "Unicorn";
             }
-            else if (radioButton3.Checked == true)
+            if (rb_pega.Checked == true)
             {
                 rasa = "Pegasus";
             }
 
-            string pohlavi;
+            string pohlavi="";
+
+            if (rb_M.Checked == true)
             {
-                if (radioButton4.Checked == true)
+                pohlavi = "M";
+            }
+            if (rb_F.Checked == true)
+            {
+                pohlavi = "F";
+            }
+
+
+
+            using (SqlConnection openCon = new SqlConnection(ConfigurationManager.ConnectionStrings["xPDA_LS_2019.Properties.Settings.poniesConnectionString"].ConnectionString))
+            {
+                string savePony = "INSERT INTO Pony (name, race, gender) VALUES (@name,(SELECT Id FROM Race WHERE race = @race),@gender)";
+
+                using (SqlCommand querySavePony = new SqlCommand(savePony))
                 {
-                    rasa = "M";
+                    querySavePony.Connection = openCon;
+                    querySavePony.Parameters.AddWithValue("@name", jmeno);
+                    querySavePony.Parameters.AddWithValue("@gender", pohlavi);
+                    querySavePony.Parameters.AddWithValue("@race", rasa);
+
+                    openCon.Open();
+                    querySavePony.ExecuteNonQuery();
+                    openCon.Close();
                 }
-                else if (radioButton5.Checked == true)
-                {
-                    rasa = "F";
+            }
+            this.Close();
+        }
 
-                    
-            
+        private void Rb_M_CheckedChanged(object sender, EventArgs e)
+        {
 
-                using (SqlConnection openCon = new SqlConnection("your_connection_String"))
-                {
-                    string savePony = "INSERT INTO Pony (name, gender, race) VALUES (@name,(SELECT Id FROM Race WHERE race LIKE @race),@gender)";
+        }
 
-                    using (SqlCommand querySavePony = new SqlCommand(savePony))
-                    {
-                        querySavePony.Connection = openCon;
-                        querySavePony.Parameters.Add("@name", SqlDbType.VarChar, 100).Value = jmeno;
-                        querySavePony.Parameters.Add("@gender", SqlDbType.VarChar, 2).Value = pohlavi;
-                        querySavePony.Parameters.Add("@race", SqlDbType.VarChar, 30).Value = rasa;
+        private void GroupBox2_Enter(object sender, EventArgs e)
+        {
 
-                        openCon.Open();
-
-
-
-
-
-
-
-
-                    }
-                }
+        }
+    }
 }
